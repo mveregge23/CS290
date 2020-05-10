@@ -1,0 +1,82 @@
+.primary-background {
+  background-color: darksalmon;
+}
+
+.double-border {
+  border: double 5px #8b0000;
+  border-radius: 5px;
+}
+
+body {
+  width: 60%;
+  margin: auto;
+}
+
+#navbar {
+  margin: 50px auto;
+}
+
+.bit-font {
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+  color: #8b0000;
+}
+
+.bit-font-large {
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  color: #8b0000;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul,
+li,
+a {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul {
+  padding: 10px;
+  color: #8b0000;
+}
+
+a {
+  color: antiquewhite;
+}
+
+a:-webkit-any-link {
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #8b0000;
+  text-decoration: underline solid #8b0000;
+}
+
+.important-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Bebas Neue", cursive;
+  color: #8b0000;
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #8b0000;
+  color: antiquewhite;
+  padding: 5px;
+  margin: 20px;
+}
+
+.btn:hover {
+  background-color: crimson;
+}

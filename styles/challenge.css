@@ -1,0 +1,10 @@
+#challenge {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+fieldset {
+  margin: 20px;
+  padding: 10px;
+  border: double 3px #8b0000;
+}

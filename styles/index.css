@@ -1,0 +1,90 @@
+#home {
+  display: block;
+  margin: 25px auto;
+  height: 100%;
+}
+
+#imageCarousel {
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+  display: table;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  display: table;
+}
+
+.arrow img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.arrow {
+  position: relative;
+  display: table-cell;
+  background-image: radial-gradient(#8b0000, #8b0000 50%, darksalmon 75%);
+}
+
+.focus {
+  display: inline-block;
+  width: 300px;
+  height: 225px;
+  position: relative;
+  perspective: 1000px;
+  margin: 80px auto;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s ease;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) translateZ(-206px);
+}
+
+.cell {
+  position: absolute;
+  width: 280px;
+  height: 215px;
+  left: 10px;
+  top: 10px;
+  transition: all 1s ease;
+  background-repeat: no-repeat;
+  background-size: 280px 215px;
+}
+
+.cell:nth-child(1) {
+  background-image: url("https://cdn.bulbagarden.net/upload/thumb/9/92/FireRed_LeafGreen_Blaine.png/182px-FireRed_LeafGreen_Blaine.png");
+}
+.cell:nth-child(2) {
+  background-image: url("https://cdn.bulbagarden.net/upload/thumb/3/3d/058Growlithe.png/250px-058Growlithe.png");
+}
+.cell:nth-child(3) {
+  background-image: url("https://cdn.bulbagarden.net/upload/thumb/3/3b/077Ponyta.png/250px-077Ponyta.png");
+}
+.cell:nth-child(4) {
+  background-image: url("https://cdn.bulbagarden.net/upload/thumb/3/3f/078Rapidash.png/250px-078Rapidash.png");
+}
+.cell:nth-child(5) {
+  background-image: url("https://cdn.bulbagarden.net/upload/thumb/b/b8/059Arcanine.png/250px-059Arcanine.png");
+}
