@@ -1,0 +1,42 @@
+.party-details {
+  text-align: center;
+  padding-inline-start: 0;
+}
+
+.party-row {
+  margin: 10px auto;
+}
+
+.party-data {
+  text-align: center;
+  border: 2px solid black;
+  width: 100px;
+  height: 50px;
+}
+
+.pokemon-image {
+  width: 80px;
+  height: 80px;
+}
+
+.move-details {
+  width: 100%;
+}
+
+.fire-move {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #ff8c00;
+}
+
+.normal-move {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #808080;
+}
+
+.psychic-move {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #ba55d3;
+}

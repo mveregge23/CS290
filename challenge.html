@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Challenge Gym Leader</title>
+    <title>Challenge</title>
     <link rel="stylesheet" type="text/css" href="styles/shared.css" />
     <link rel="stylesheet" type="text/css" href="styles/challenge.css" />
     <link
@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script defer src="scripts/linkStyles.js"></script>
+    <script defer src="scripts/submitChallenge.js"></script>
   </head>
   <body class="primary-background">
     <div id="navbar">
@@ -21,13 +22,14 @@
           |
           <li><a href="challenge.html">Challenge</a></li>
           |
-          <li><a href="#">About</a></li>
+          <li><a href="about.html">About</a></li>
           |
           <li><a href="#">Resources</a></li>
         </ul>
       </nav>
     </div>
-    <h1 class="important-text">Challenge Blaine!</h1>
+    <h1 class="important-text">Challenge Blaine</h1>
+    <div id="success" class="bit-font" style="display: none;">Success!</div>
     <div id="challenge" class="double-border">
       <form class="bit-font">
         <fieldset>
@@ -96,7 +98,7 @@
           <!--Correct-->
         </fieldset>
       </form>
-      <button class="btn bit-font-large">Submit</button>
+      <button class="btn bit-font-large" id="submit">Submit</button>
     </div>
   </body>
 </html>
