@@ -32,13 +32,14 @@ nav {
   text-align: center;
 }
 
-nav ul,
-li,
-a {
+nav li {
   display: inline-block;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+}
+
+nav ul {
+  display: inline-block;
+  padding: 0px;
 }
 
 nav > ul {
@@ -46,15 +47,15 @@ nav > ul {
   color: #8b0000;
 }
 
-a {
+li > a {
   color: antiquewhite;
 }
 
-a:-webkit-any-link {
+li > a:-webkit-any-link {
   text-decoration: inherit;
 }
 
-a:hover {
+li > a:hover {
   color: #8b0000;
   text-decoration: underline solid #8b0000;
 }
@@ -66,6 +67,13 @@ a:hover {
   font-size: 50px;
   font-family: "Bebas Neue", cursive;
   color: #8b0000;
+}
+
+.line-space {
+  padding: 5px;
+  border-bottom: 2px solid rgba(36, 24, 21, 0.8);
+  width: 60%;
+  margin: auto;
 }
 
 .btn {

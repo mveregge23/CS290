@@ -1,6 +1,35 @@
 .party-details {
+  display: table;
+  margin: auto;
   text-align: center;
   padding-inline-start: 0;
+}
+
+.blurb {
+  line-height: 1.5em;
+  margin: 20px;
+}
+
+.bulbapedia-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 3px;
+  right: 10px;
+  margin: auto;
+}
+
+.learn-more {
+  text-decoration: none;
+}
+
+.bulbapedia-script {
+  position: relative;
+  top: 10px;
+}
+
+.party-details li {
+  list-style-type: none;
 }
 
 .party-row {
