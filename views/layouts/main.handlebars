@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap"
+        rel="stylesheet" />
+
+    {{#each styles}}
+    <link rel="stylesheet" type="text/css" href="styles/{{this}}" />
+    {{/each}}
+
+    {{#each scripts}}
+    <script defer src="scripts/{{this}}"></script>
+    {{/each}}
+</head>
+
+<body class="primary-background">
+    <div id="navbar">
+        <nav class="bit-font">
+            <ul class="double-border">
+                <li>
+                    <a href="index">Home</a>
+                </li>
+                |
+                <li><a href="challenge">Challenge</a></li>
+                |
+                <li><a href="about">About</a></li>
+                |
+                <li><a href="resources">Resources</a></li>
+            </ul>
+        </nav>
+    </div>
+    {{{body}}}
+</body>
+
+</html>
