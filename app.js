@@ -5,10 +5,12 @@ var handlebars = require("express-handlebars").create({
   defaultLayout: "main",
 });
 
-/*var bodyParser = require('body-parser');
+var answers = require("./challengeAnswers");
+
+var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());*/
+app.use(bodyParser.json());
 
 app.engine("handlebars", handlebars.engine);
 app.set("view engine", "handlebars");
@@ -31,6 +33,17 @@ app.get("/challenge", function (req, res) {
   });
 });
 
+app.post("/challenge", function (req, res) {
+  var passed = true;
+  var keys = Object.keys(answers);
+  for (var key = 0; key < keys.length; key++) {
+    if (answers[keys[key]] !== req.body[keys[key]]) {
+      passed = false;
+      break;
+    }
+  }
+  res.send({ passed: passed });
+});
 app.get("/about", function (req, res) {
   res.render("about", {
     title: "About",

@@ -13,12 +13,17 @@ function submitChallenge() {
     headers: { "content-type": "application/json" },
     body: JSON.stringify(answers),
   };
-  fetch("http://httpbin.org/post", requestParams)
-    .then(hideForm)
+  fetch("/challenge", requestParams)
+    .then((response) => {
+      response.json().then((json) => {
+        hideForm(json.passed);
+      });
+    })
     .catch((error) => alert("Error submitting form: %s", error));
 }
 
-function hideForm() {
+function hideForm(passed) {
   document.getElementById("challenge").style.display = "none";
-  document.getElementById("success").style.display = "block";
+  if (passed) document.getElementById("success").style.display = "block";
+  else document.getElementById("failure").style.display = "block";
 }
