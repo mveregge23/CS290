@@ -24,6 +24,7 @@ function submitChallenge() {
 
 function hideForm(passed) {
   document.getElementById("challenge").style.display = "none";
+  document.getElementById("challengeBlurb").style.display = "none";
   if (passed) document.getElementById("success").style.display = "block";
   else document.getElementById("failure").style.display = "block";
 }

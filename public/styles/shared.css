@@ -49,15 +49,11 @@ nav > ul {
 
 li > a {
   color: antiquewhite;
-}
-
-li > a:-webkit-any-link {
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
 li > a:hover {
   color: #8b0000;
-  text-decoration: underline solid #8b0000;
 }
 
 .important-text {
@@ -87,4 +83,30 @@ li > a:hover {
 
 .btn:hover {
   background-color: crimson;
+}
+
+.blurb {
+  line-height: 1.5em;
+  margin: 20px;
+}
+
+.header-image-small {
+  width: 40px;
+  height: 40px;
+  padding: 0px 20px;
+}
+
+.header-image-large {
+  width: 80px;
+  height: 80px;
+  padding: 0px 20px;
+}
+
+.header-content {
+  display: inline-block;
+}
+
+#footer {
+  margin: 40px auto;
+  display: inline-block;
 }

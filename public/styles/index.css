@@ -28,6 +28,7 @@
   width: 50px;
   height: 50px;
   display: table;
+  transform: rotate(180deg);
 }
 
 .arrow img {
@@ -41,7 +42,6 @@
 .arrow {
   position: relative;
   display: table-cell;
-  background-image: radial-gradient(#8b0000, #8b0000 50%, darksalmon 75%);
 }
 
 .focus {
@@ -87,4 +87,9 @@
 }
 .cell:nth-child(5) {
   background-image: url("https://cdn.bulbagarden.net/upload/thumb/b/b8/059Arcanine.png/250px-059Arcanine.png");
+}
+
+.blaine-header-image {
+  position: relative;
+  top: 20px;
 }
